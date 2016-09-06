@@ -24,7 +24,33 @@
   
   
 </div>
-
+<div id="bookingjs">
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="http://cdn.timekit.io/booking-js/v1/booking.min.js" defer></script>
+  <script type="text/javascript">
+    window.timekitBookingConfig = {
+      name: 'Niek van der Voort',
+      email: 'niek@lastmason.com',
+      apiToken: 'g7s2kPhmYzSqvKTSEZJCaRjjOu60kJ5b',
+      avatar: 'https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/3/000/096/03b/13fa520.jpg',
+      timekitFindTime: {
+        filters: {
+          and: [
+            {
+              business_hours: { }
+            },
+            {
+              exclude_weekend: { }
+            }
+          ]
+        }
+      },
+      localization: {
+        timeDateFormat: '24h-dmy-mon'
+      }
+    }
+  </script>
+</div>
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/Niekvandervoort/amansys">Meet Niek</a> is maintained by <a href="https://github.com/Niekvandervoort">Niekvandervoort</a>.</span>
 
